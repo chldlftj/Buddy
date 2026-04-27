@@ -11,8 +11,8 @@
     - chmod +x ./gradlew
     - ./gradlew clean build
     shell: BASH
-    docker_image_name: library/gradle
-    docker_image_tag: 9.3
+    docker_image_name: gradle:8.4-jdk17:gradle
+    docker_image_tag: 8.4-jdk17
   - action: gradle build
     type: BUILD
     execute_commands:
