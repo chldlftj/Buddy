@@ -8,7 +8,6 @@
   - action: ./gradlew clean build
     type: BUILD
     execute_commands:
-    - gradle build
     - chmod +x ./gradlew
     - ./gradlew clean build
     shell: BASH
