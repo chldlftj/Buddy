@@ -4,3 +4,13 @@
   fail_on_prepare_env_warning: true
   events:
   - type: WEBHOOK
+  actions:
+  - action: ./gradlew clean build
+    type: BUILD
+    execute_commands:
+    - gradle build
+    - chmod +x ./gradlew
+    - ./gradlew clean build
+    shell: BASH
+    docker_image_name: library/gradle
+    docker_image_tag: 9.3
